@@ -1,0 +1,50 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(15,30px);
+    grid-template-rows: auto auto;
+    gap: 8px;
+    justify-content: start;
+}
+
+.grid-container input[type="text"]{
+    width: 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.grid-container input[type="checkbox"]{
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+#wrapper{
+    width: 600px;
+    border: 2px solid blue;
+    border-radius: 25px;
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 30px auto;
+}
+
+h1{
+    width: 600px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+input[type="button"]{
+    width: 200px;
+    height: 30px;
+    background-color: navy;
+    color: white;
+    border: 3px solid yellow;
+    border-radius: 10px;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: yellow;
+    color: navy;
+    border: 3px solid navy;
+}
