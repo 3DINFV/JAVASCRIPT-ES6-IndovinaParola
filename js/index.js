@@ -55,3 +55,23 @@ function inizializza(){
         form1.chkRis[i].disabled=true;
     }
 }
+
+// s = stringa segreta     ORA
+// stringa che l'utente inserisce PAL
+function confronta(){
+    let nCheck = 0;
+    for(let i=0; i<ln;i++){
+        if(s.slice(i,i+1) == form1.txtIns.value.toUpperCase().slice(i,i+1)){
+            form1.txtCar[i].value = form1.txtIns.value.slice(i,i+1);
+            form1.chkRis[i].checked = true;
+            nCheck++;
+        }else{
+            form1.txtCar[i] = "*";
+            form1.chkRis[i].checked = false;
+            nCheck--;
+        }
+    }
+    if(nCheck == ln){
+        alert("BRAVO HAI VINTO!");
+    }
+}
